@@ -14,8 +14,6 @@ var firebaseConfig = {
   measurementId: "G-2K3XY7450C"
 };
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
-
-firebase.firestore().setting({ timestempInSnapshots: true });
+firebase.firestore().settings({ timestampsInSnapshots: true });
 
 export default firebase;
